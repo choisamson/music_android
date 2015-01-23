@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/albumLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/albumInfo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp" >
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:contentDescription="@string/thumbnail_for_artist"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+        android:id="@+id/artist"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/albumArt"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Sub"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/artist"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="marquee"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/albumArt"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarSize="10dp"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:id="@+id/tableList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+        </TableLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

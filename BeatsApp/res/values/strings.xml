@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BeatsApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="holds_list_of_songs_artists_genres">Holds list of songs/artists/genres</string>
+    <string name="thumbnail_for_artist">Thumbnail for artist</string>
+    <string name="second_line">Second Line</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="next_page">Next Page</string>
+    <string name="prev_page">Prev Page</string>
+    <string name="view_more_albums">View More Albums</string>
+    <string name="load_more_artists">Load More Artists</string>
+    <string name="view_more_artists">View More Artists</string>
+
+</resources>
